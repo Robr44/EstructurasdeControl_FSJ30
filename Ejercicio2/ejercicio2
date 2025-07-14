@@ -1,0 +1,17 @@
+/*
+    Crear una función que determine la nota final de un alumno, la cual depende de lo siguiente:
+        Examen =20%
+        Tareas = 40%
+        Asistencia = 10%
+        Investigación = 30%
+    Al final deberá mostrar los datos del alumno, nombre, carnet y nota final
+*/
+
+function notaFinal(nombre, carnet, examen, tareas, asistencia, investigacion) {
+    let calculoNota = (examen * 0.20) + (tareas * 0.40) + (asistencia * 0.10) + (investigacion * 0.30);
+    console.log("Nombre: " + nombre);
+    console.log("Carnet: " + carnet);
+    console.log("Nota Final: " + calculoNota + "\n");
+}
+notaFinal("Roberto Mangandi", "RM12345", 8, 9, 10, 8);
+notaFinal("Edenilson Escobar", "EE67890", 7, 7.5, 8, 8.5);
