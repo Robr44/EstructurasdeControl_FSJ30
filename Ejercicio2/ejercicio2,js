@@ -6,12 +6,14 @@
         Investigación = 30%
     Al final deberá mostrar los datos del alumno, nombre, carnet y nota final
 */
-
+// Funcion para encontrar la nota final de alumnos 
 function notaFinal(nombre, carnet, examen, tareas, asistencia, investigacion) {
+    // Se calcula la nota Final
     let calculoNota = (examen * 0.20) + (tareas * 0.40) + (asistencia * 0.10) + (investigacion * 0.30);
-    console.log("Nombre: " + nombre);
-    console.log("Carnet: " + carnet);
-    console.log("Nota Final: " + calculoNota + "\n");
+    console.log("Nombre: " + nombre); // Mostrar el nombre del estudiante
+    console.log("Carnet: " + carnet); // Mostrar el carnet de estudiante
+    console.log("Nota Final: " + calculoNota.toFixed(2) + "\n"); // Mostrar la nota final del estudiante
 }
+// Llamadas a la función notaFinal asignandole datos
 notaFinal("Roberto Mangandi", "RM12345", 8, 9, 10, 8);
 notaFinal("Edenilson Escobar", "EE67890", 7, 7.5, 8, 8.5);
